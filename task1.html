@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="TestApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styled.css">
+    <!-- <img src="https://img.icons8.com/ios/50/000000/circled-a.png"/> -->
+    <!-- <img src="https://img.icons8.com/ios/50/000000/circled-b.png"/> -->
+    <!-- <img src="https://img.icons8.com/ios/50/000000/circled-c.png"/> -->
+    <!-- <img src="https://img.icons8.com/ios/50/000000/circled-d.png"/> -->
+    <!-- wrong icon:
+    <img src="https://img.icons8.com/material-outlined/24/000000/multiply.png"/> -->
+   
+</head>
+<body ng-controller="testCtrl">
+    <div class="wrap">
+       <div class="quiz" id="e">
+           <h1>guess the output console.log("2+3");</h1>
+           <ul id="u">
+               <li id="ed" onclick="add()">2+3 </li>
+               <li id="li2">5</li>
+               <li id="li3" >Null</li>
+               <li id="li4" onclick="add3">undefined</li>
+           </ul>
+       </div> 
+
+
+    </div>
+    <script>
+
+     function add() {
+         document.getElementById("ed").style.backgroundColor = "rgb(73, 167, 73)";
+         document.getElementById("ed").style.backgroundImage = "url(https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png)"
+     //this is for all options/second way 
+        // var f=document.querySelectorAll("li")
+        // for (let i = 0; i < f.length; i++) {
+        //     // f[i].style.listStyle="decimal "
+        //     f[i].style.listStyle="decimal"
+            
+        // }
+     }
+
+     document.getElementById("li2").addEventListener("click", ()=>{
+         document.getElementById("li2").style.backgroundColor="rgb(226, 115, 115)";
+         document.getElementById("ed").style.backgroundColor = "rgb(73, 167, 73)";
+         document.getElementById("ed").style.backgroundImage = "url(https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png)"
+         document.getElementById("li2").style.backgroundImage = "url(https://img.icons8.com/material-outlined/24/000000/multiply.png)"
+
+     })
+     document.getElementById("li3").addEventListener("click", ()=>{
+         document.getElementById("li3").style.backgroundColor="rgb(226, 115, 115)";
+         document.getElementById("ed").style.backgroundColor = "rgb(73, 167, 73)";
+         document.getElementById("ed").style.backgroundImage = "url(https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png)"
+         document.getElementById("li3").style.backgroundImage = "url(https://img.icons8.com/material-outlined/24/000000/multiply.png)"
+
+     })
+     document.getElementById("li4").addEventListener("click", ()=>{
+         document.getElementById("li4").style.backgroundColor="rgb(226, 115, 115)";
+         document.getElementById("ed").style.backgroundColor = "rgb(73, 167, 73)";
+         document.getElementById("ed").style.backgroundImage = "url(https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png)"
+         document.getElementById("li4").style.backgroundImage = "url(https://img.icons8.com/material-outlined/24/000000/multiply.png)"
+
+     })
+
+
+
+
+//some ways dont completed 
+    //    const s= document.getElementById('u')
+// let listItems = document.querySelectorAll('ul > li');
+// listItems.style.background='red'
+// function add(index){
+//     const f=document.getElementById("ed");
+//     if (id === index) {
+//         f.style.backgroundColor='green';}
+    
+
+// const l=document.getElementById("ed")
+// // for (let i = 0; i <= l.length; ++i) {
+//     l.addEventListener("click", vv);
+//      function vv(){
+//     l.style.backgroundColor='green';
+// }
+// document.querySelector('.2').style.backgroundColor="red"
+
+    </script>
+</body>
+</html>
